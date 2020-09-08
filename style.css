@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.main_section {
+  min-height: 100vh;
+  width: 100vw;
+  background: #ff5252;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background 0.5s ease-out;
+  transition: background 0.5s ease-out;
+}
+
+.main_section .theme_section {
+  padding: 3px;
+}
+
+.main_section .theme_section button {
+  height: 1rem;
+  width: 5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.main_section .theme_section button:nth-child(1) {
+  background: #ff5252;
+}
+
+.main_section .theme_section button:nth-child(2) {
+  background: #FFC107;
+}
+
+.main_section .theme_section button:nth-child(3) {
+  background: #2196F3;
+}
+
+.main_section .theme_section button:nth-child(4) {
+  background: #8BC34A;
+}
+
+.main_section .task_section {
+  background: #fff;
+  min-height: 70vh;
+  min-width: 45vw;
+  padding: 3rem;
+  -webkit-box-shadow: #e0e0e0 5px 5px 4px;
+          box-shadow: #e0e0e0 5px 5px 4px;
+}
+
+.main_section .task_section h1 {
+  font-size: 3rem;
+}
+
+.main_section .task_section li {
+  list-style-type: none;
+  font-size: 2rem;
+  background: #f3e5ab;
+  padding: 0.7rem;
+  margin: 0.5em;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+}
+
+.main_section .task_section li i {
+  float: right;
+  cursor: pointer;
+  margin-top: -2.5rem;
+}
+
+.main_section .task_section .task_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 1rem;
+  width: 100%;
+}
+
+.main_section .task_section .task_form .task_input {
+  border: 1px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  font-weight: 600;
+}
+
+.main_section .task_section .task_form .task_input:focus {
+  outline: none;
+}
+
+.main_section .task_section .task_form .add_task_button {
+  font-size: 2rem;
+  background: #2196F3;
+  border: none;
+  padding: 0 1rem;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

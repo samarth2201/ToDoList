@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+html{
+    font-size: 10px;
+}
+.main_section{
+
+    min-height: 100vh;
+    width: 100vw;
+    background: #ff5252 ;
+    display: flex;
+    flex-flow: column   ;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease-out;
+    .theme_section
+    {
+
+        padding: 3px;
+        button{
+            height: 1rem ;
+            width:5rem;
+            border: none ;
+            cursor: pointer;
+
+            &:nth-child(1){
+                background:#ff5252   ;
+            }
+
+            &:nth-child(2){
+                background:#FFC107;
+            }
+
+            &:nth-child(3){
+                background:#2196F3;
+            }
+
+            &:nth-child(4){
+                background: #8BC34A ;
+            }
+        }
+    }
+
+
+
+
+    .task_section{
+         
+        background : #fff ;
+        min-height: 70vh;
+        min-width:45vw ;
+        padding: 3rem;
+        box-shadow: #e0e0e0 5px 5px 4px;
+     
+     
+        h1{
+            font-size:3rem;
+             
+        }
+
+
+        li{
+
+            list-style-type: none;
+            font-size:2rem;
+            background : #f3e5ab;
+            padding: 0.7rem;
+            margin: 0.5em;      
+            transition:  1s ease-in;
+            i{
+                float: right;
+                cursor: pointer;
+                margin-top:-2.5rem ;
+            }
+            
+        }
+        .task_form{
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content:start;
+                padding: 1rem;
+                width: 100%; 
+
+
+                .task_input{
+                  
+                   
+                    border:1px solid black;
+                    flex-grow: 1;
+                    font-size: 1.7rem   ;
+                    padding:0.8rem  ;
+                    font-weight:600;
+                    &:focus{
+                        outline:none;
+                    }
+                }
+                .add_task_button
+                {
+                    font-size: 2rem;
+                    background:#2196F3;
+                    border:none;
+                    padding: 0 1rem;
+                    color:white ;
+                    cursor: pointer;
+                     
+                }
+            }
+
+    }
+}
